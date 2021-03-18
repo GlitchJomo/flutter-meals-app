@@ -1,7 +1,7 @@
 ## Gitpod Flutter
 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vtorres/gitpod-flutter)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/GlitchJomo/flutter-meals-app)
 
 [![made-with-flutter](https://img.shields.io/badge/Made%20with-Gitpod-1f425f.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-1f425f.svg)](https://github.com/vtorres/youcheater/blob/master/LICENSE)
