@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 
+import './dummy_data.dart';
+import './category_item.dart';
+
 class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // GridView builder could be used for dynamic number of items,
     //but this has a fixed number
     return GridView(
-      children: [],
+      children: DUMMY_CATEGORIES
+          .map((catData) => CategoryItem(
+                catData.title,
+                catData.color,
+              ))
+          .toList(),
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
         // maximum list item width
         maxCrossAxisExtent: 200,
