@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
+//import 'package:flutter/cupertino.dart';
 
 import './dummy_data.dart';
-import './category_item.dart';
+import 'category_item.dart';
 
 class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // GridView builder could be used for dynamic number of items,
-    //but this has a fixed number
     return Scaffold(
       appBar: AppBar(
         title: const Text('DeliMeal'),
       ),
       body: GridView(
+        padding: const EdgeInsets.all(25),
         children: DUMMY_CATEGORIES
             .map((catData) => CategoryItem(
                   catData.title,
@@ -20,9 +20,7 @@ class CategoriesScreen extends StatelessWidget {
                 ))
             .toList(),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          // maximum list item width
           maxCrossAxisExtent: 200,
-          // item sizing, regarding height to width ratio
           childAspectRatio: 3 / 2,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
