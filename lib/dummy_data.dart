@@ -6,10 +6,10 @@ import './models/category.dart';
 _randomColor() {
   return RandomColor()
       .randomColor(
-        colorHue: ColorHue.custom(
-            Range.staticValue(HSLColor.fromAHSL(1, 27, 0.6, 0.42).hue.toInt())),
-        colorSaturation: ColorSaturation.highSaturation,
-      )
+          colorHue: ColorHue.custom(Range.staticValue(
+              HSLColor.fromAHSL(1, 27, 0.6, 0.42).hue.toInt())),
+          colorSaturation: ColorSaturation.highSaturation,
+          colorBrightness: ColorBrightness.custom(Range(25, 60)))
       .withOpacity(0.8);
 }
 

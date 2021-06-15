@@ -8,7 +8,6 @@ class Category {
   Category({
     @required this.id,
     @required this.title,
-    // sets default value
-    this.color = Colors.orange,
+    @required this.color,
   });
 }
