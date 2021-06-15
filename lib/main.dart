@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
                 color: paletteDarkGreen,
               ),
               headline6: TextStyle(
-                fontSize: 20,
+                fontSize: 21,
                 fontWeight: FontWeight.bold,
-                color: paletteDarkGreen,
+                color: Colors.white,
               ),
             ),
         appBarTheme: AppBarTheme(

@@ -31,14 +31,15 @@ class CategoryItem extends StatelessWidget {
           style: Theme.of(context).textTheme.headline6,
         ),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              color.withOpacity(0.7),
-              color,
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
+          color: color,
+          // gradient: LinearGradient(
+          //   colors: [
+          //     color.withOpacity(0.5),
+          //     color,
+          //   ],
+          //   begin: Alignment.topLeft,
+          //   end: Alignment.bottomRight,
+          // ),
           borderRadius: BorderRadius.circular(15),
         ),
       ),

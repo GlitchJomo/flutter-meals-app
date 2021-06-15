@@ -5,7 +5,7 @@ class Category {
   final String title;
   final Color color;
 
-  const Category({
+  Category({
     @required this.id,
     @required this.title,
     // sets default value

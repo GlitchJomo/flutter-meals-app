@@ -1,66 +1,77 @@
 import 'package:flutter/material.dart';
+import 'package:random_color/random_color.dart';
 
 import './models/category.dart';
 
-const DUMMY_CATEGORIES = const [
+_randomColor() {
+  return RandomColor()
+      .randomColor(
+        colorHue: ColorHue.custom(
+            Range.staticValue(HSLColor.fromAHSL(1, 27, 0.6, 0.42).hue.toInt())),
+        colorSaturation: ColorSaturation.highSaturation,
+      )
+      .withOpacity(0.8);
+}
+
+final dummyCategories = [
   Category(
     id: 'c1',
     title: 'Italian',
-    color: Colors.purple,
+    color: _randomColor(),
   ),
   Category(
     id: 'c2',
     title: 'Quick & Easy',
-    color: Colors.red,
+    color: _randomColor(),
   ),
   Category(
     id: 'c3',
     title: 'Hamburgers',
-    color: Colors.orange,
+    color: _randomColor(),
   ),
   Category(
     id: 'c4',
     title: 'German',
-    color: Colors.amber,
+    color: _randomColor(),
   ),
   Category(
     id: 'c5',
     title: 'Light & Lovely',
-    color: Colors.blue,
+    color: _randomColor(),
   ),
   Category(
     id: 'c6',
     title: 'Exotic',
-    color: Colors.green,
+    color: _randomColor(),
   ),
   Category(
     id: 'c7',
     title: 'Breakfast',
-    color: Colors.lightBlue,
+    color: _randomColor(),
   ),
   Category(
     id: 'c8',
     title: 'Asian',
-    color: Colors.lightGreen,
+    color: _randomColor(),
   ),
   Category(
     id: 'c9',
     title: 'French',
-    color: Colors.pink,
+    color: _randomColor(),
   ),
   Category(
     id: 'c10',
     title: 'Summer',
-    color: Colors.teal,
+    color: _randomColor(),
   ),
   Category(
     id: 'c11',
     title: 'Spicy',
-    color: Colors.deepOrange,
+    color: _randomColor(),
   ),
   Category(
     id: 'c12',
     title: 'Sushi',
-    color: Colors.blueGrey,
+    color: _randomColor(),
   ),
 ];
